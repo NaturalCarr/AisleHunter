@@ -21,7 +21,7 @@ block content
         ul#itemlist
           h1.sublabel Items
           each item, i in items
-            a(href="/map?store=" + "#{store}" + "?item=" + "#{item}")
+            a(href="/map?store=" + "#{store}" + "&item=" + "#{item}")
               li.itemlistitem
                 button.itembutton
                   span.itemlabel #{item}

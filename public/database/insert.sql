@@ -18,11 +18,11 @@ INSERT INTO ITEM (Name) VALUES ('Deep Sea Diving Equipment');
 /*---------------*\
 Stores
 \*---------------*/
-INSERT INTO STORE (Name, Address, Zip, Sun_O, Sun_C, Mon_O, Mon_C, Tue_O, Tue_C, Wed_O, Wed_C, Thu_O, Thu_C, Fri_O, Fri_C, Sat_O, Sat_C) VALUES ('Meyer''s Super Foods' , '82-19 Dr. Brule Avenue', '11892', '900', '1900', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300');
+INSERT INTO STORE (Name, Address, Zip, Sun_O, Sun_C, Mon_O, Mon_C, Tue_O, Tue_C, Wed_O, Wed_C, Thu_O, Thu_C, Fri_O, Fri_C, Sat_O, Sat_C) VALUES ('Meyers Super Foods' , '82-19 Dr. Brule Avenue', '11892', '900', '1900', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300');
 INSERT INTO STORE (Name, Address, Zip, Sun_O, Sun_C, Mon_O, Mon_C, Tue_O, Tue_C, Wed_O, Wed_C, Thu_O, Thu_C, Fri_O, Fri_C, Sat_O, Sat_C) VALUES ('Jimmies' , '386 Rockland Interview', '16325', '900', '1900', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300');
-INSERT INTO STORE (Name, Address, Zip, Sun_O, Sun_C, Mon_O, Mon_C, Tue_O, Tue_C, Wed_O, Wed_C, Thu_O, Thu_C, Fri_O, Fri_C, Sat_O, Sat_C) VALUES ('Seymour''s Food Shop' , '313-26 Baldwin Avenue', '91210', '900', '1900', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300');
+INSERT INTO STORE (Name, Address, Zip, Sun_O, Sun_C, Mon_O, Mon_C, Tue_O, Tue_C, Wed_O, Wed_C, Thu_O, Thu_C, Fri_O, Fri_C, Sat_O, Sat_C) VALUES ('Seymours Food Shop' , '313-26 Baldwin Avenue', '91210', '900', '1900', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300');
 INSERT INTO STORE (Name, Address, Zip, Sun_O, Sun_C, Mon_O, Mon_C, Tue_O, Tue_C, Wed_O, Wed_C, Thu_O, Thu_C, Fri_O, Fri_C, Sat_O, Sat_C) VALUES ('Spend-Les' , '123 ABC Road', '11234', '900', '1900', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300');
-INSERT INTO STORE (Name, Address, Zip, Sun_O, Sun_C, Mon_O, Mon_C, Tue_O, Tue_C, Wed_O, Wed_C, Thu_O, Thu_C, Fri_O, Fri_C, Sat_O, Sat_C) VALUES ('Meyer''s Villian Foods' , '19-82 Brutal Avenue', '11892', '900', '1900', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300');
+INSERT INTO STORE (Name, Address, Zip, Sun_O, Sun_C, Mon_O, Mon_C, Tue_O, Tue_C, Wed_O, Wed_C, Thu_O, Thu_C, Fri_O, Fri_C, Sat_O, Sat_C) VALUES ('Meyers Villian Foods' , '19-82 Brutal Avenue', '11892', '900', '1900', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300', '730', '2300');
 /*---------------*\
 Aisles
 \*---------------*/

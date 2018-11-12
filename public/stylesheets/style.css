@@ -62,4 +62,16 @@ a {
 	color: white;
 }
 
+.locationsubdiv{
+	display: inline-block;
+}
+
+.locationsubdiv#tags{
+	background-color: rgb(0, 0, 0, 0.5);
+}
+
+.locationsubdiv#info{
+	background-color: rgb(255, 100, 0, 0.5);
+}
+
 //7186705790 - melissa

@@ -4,24 +4,17 @@ block content
   .outer
     .middle
       .inner
-        h1.storename #{store}
-        .subdiv#address
-          h1 Address
-          h3 #{add}, #{zip}
-        .subdiv#hours
-          ul#hours
-            h1.sublabel Hours
-            li #{Sun}
-            li #{Mon}
-            li #{Tue}
-            li #{Wed}
-            li #{Thu}
-            li #{Fri}
-            li #{Sat}
-        ul#itemlist
-          h1.sublabel Items
-          each item, i in items
-            a(href="/map?store=" + "#{store}" + "?item=" + "#{item}")
-              li.itemlistitem
-                button.itembutton
-                  span.itemlabel #{item}
+        h1 #{store} : #{item}
+        #map
+          img(src="images/placeholder_floorplan.png")
+        #location
+          .locationsubdiv#tags
+            h2 Aisle: 
+            h2 Position In Aisle:
+            h2 Shelf Number (From Bottom):
+            h2 Special Comments: 
+          .locationsubdiv#info
+            h2 #{anum}
+            h2 #{pia}
+            h2 #{snum}
+            h2 #{com}
