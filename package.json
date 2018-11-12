@@ -1,0 +1,43 @@
+{
+  "name": "aislehunter",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jquery": "^3.3.1",
+    "morgan": "~1.9.0",
+    "querystring": "^0.2.0",
+    "serve-favicon": "^2.5.0",
+    "sqlite3": "^4.0.4"
+  },
+  "description": "Aisle Hunter, the supermarket item-finding app.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaturalCarr/AisleHunter.git"
+  },
+  "keywords": [
+    "Aisle",
+    "Hunter",
+    "Aislehunter",
+    "super",
+    "market",
+    "supermarket",
+    "shop",
+    "store",
+    "finder"
+  ],
+  "author": "Carr, Natural B.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaturalCarr/AisleHunter/issues"
+  },
+  "homepage": "https://github.com/NaturalCarr/AisleHunter#readme"
+}

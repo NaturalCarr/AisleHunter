@@ -1,0 +1,6 @@
+extends layout
+link(rel='stylesheet', href='/stylesheets/general.css')
+block content
+  each item, i in items
+    a(href="/images/" + "#{store}" + "/" + "#{item}" + ".jpg") #{item}
+    br
