@@ -64,6 +64,8 @@ a {
 
 .locationsubdiv{
 	display: inline-block;
+	margin: 0 auto;
+	width: 40%;
 }
 
 .locationsubdiv#tags{
@@ -74,4 +76,14 @@ a {
 	background-color: rgb(255, 100, 0, 0.5);
 }
 
+img.toplogo {
+	height: 200px;
+	margin: auto;
+}
+
+a.homelink {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
 //7186705790 - melissa
