@@ -61,6 +61,10 @@ INSERT INTO AISLE (Number, StoreID) VALUES (8, 4);
 /*---------------*\
 Item Positions
 \*---------------*/
+
+/* 
+INSERT INTO POSITION (ITEM, StoreID, Aisle_Number, Shelf_Number, PIA, Comment) Values ([One Of The Items], [A Number Between 0 And 4], [A Number Between 1 And 8], [A Number Below 20,[Front | Middle | Back],[Random Comment On Position]);
+*/
 INSERT INTO POSITION (ITEM, StoreID, Aisle_Number, Shelf_Number, PIA, Comment) Values ('Rice', '1', '3', '6','Middle','It''s Below The Dishwashing Liquid');
 INSERT INTO POSITION (ITEM, StoreID, Aisle_Number, Shelf_Number, PIA, Comment) Values ('Eggs', '1', '1', '1','Back','End Of The Aisle Next To The Milk'); 
 INSERT INTO POSITION (ITEM, StoreID, Aisle_Number, Shelf_Number, PIA, Comment) Values ('Milk', '1', '1', '1','Back','End Of The Aisle Next To The Eggs'); 
