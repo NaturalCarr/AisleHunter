@@ -6,7 +6,7 @@ var url = require('url');
 
 router.get('/', function(req, res, next) {
     var store = {
-        items: ["No Itemss Retrieved"],
+        items: ["No Items Retrieved"],
         Name: "Store Name Not Retrieved",
         Address: "Store Address Noy Retrieved",
         Zip: "Store Zip Not Reteived",
@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 
     if (req.query.id != null) {
 
-    	pullStoreInfo(req.query.id);
+        pullStoreInfo(req.query.id);
 
         function storeInfo(SUN_O, SUN_C, MON_O, MON_C, TUE_O, TUE_C, WED_O, WED_C, THU_O, THU_C, FRI_O, FRI_C, SAT_O, SAT_C, addr, zip, name) {
             store.Name = name;
@@ -36,12 +36,12 @@ router.get('/', function(req, res, next) {
             store.Zip = zip;
         }
 
- 
+
     } //end of query if-statement
 
-           function storeItems(I, i) {
-            store.items[i] = I;
-        }
+    function storeItems(I, i) {
+        store.items[i] = I;
+    }
 
     function pullStoreInfo(query) {
         var i = 0;
@@ -55,7 +55,9 @@ router.get('/', function(req, res, next) {
 
         aidb.serialize(() => {
             aidb.each("SELECT ITEM.NAME AS INAME FROM ITEM, AISLE, POSITION, STORE WHERE POSITION.STOREID = STORE.ID AND AISLE.STOREID = STORE.ID AND POSITION.STOREID = AISLE.STOREID AND POSITION.ITEM = ITEM.NAME AND AISLE.NUMBER = POSITION.AISLE_NUMBER AND STORE.ID = '" + sid + "';", (err, row) => {
-                if (err) {console.error(err.message);}
+                if (err) {
+                    console.error(err.message);
+                }
                 storeItems(row.INAME, i);
                 i++;
             }); // end of database.each
@@ -77,8 +79,8 @@ router.get('/', function(req, res, next) {
         }); //end of database.close
     } //end of pullinfo function
 
-    function render(){
-    	 res.render('store', {
+    function render() {
+        res.render('store', {
             title: 'AH - ' + store.Name,
             store: store.Name,
             items: store.items,

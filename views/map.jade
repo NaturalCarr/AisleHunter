@@ -1,12 +1,11 @@
 extends layout
-link(rel='stylesheet', href='/stylesheets/general.css')
 block content
   .outer
     .middle
       .inner
         h1 #{store} : #{item}
         #map
-          img(src="images/placeholder_floorplan.png")
+          img(id="mapimage" src='#{imageurl}.jpg' alt="ERROR: File '#{imageurl}.jpg' Not Found!")
         #location
           .locationsubdiv#tags
             h2 Aisle: 

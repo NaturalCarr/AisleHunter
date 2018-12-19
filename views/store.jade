@@ -1,5 +1,5 @@
 extends layout
-link(rel='stylesheet', href='/stylesheets/general.css')
+link(rel='stylesheet', href='/stylesheets/store.css')
 block content
   .outer
     .middle
@@ -19,9 +19,10 @@ block content
             li #{Fri}
             li #{Sat}
         ul#itemlist
-          h1.sublabel Items
-          each item, i in items
-            a(href="/map?store=" + "#{store}" + "&item=" + "#{item}")
-              li.itemlistitem
-                button.itembutton
-                  span.itemlabel #{item}
+          .dropdown
+            button.dropbtn(onclick="myFunction()") Items
+            #myDropdown.dropdown-content
+              each item, i in items
+                a(href="/map?store=" + "#{store}" + "&item=" + "#{item}").itemlink
+                    span.itemlabel #{item}
+  
